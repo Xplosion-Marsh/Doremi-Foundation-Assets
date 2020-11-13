@@ -1,0 +1,826 @@
+/* Contact Page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-body {
+    background: white !important;
+}
+
+
+/* Navbar */
+
+
+/* Google Map */
+
+.google-map {
+    margin: 0;
+    margin-top: 72px;
+}
+
+
+/* Bg-overlay */
+
+.hero {
+    background: url(../images/gedung-depan.JPG);
+    background-attachment: fixed;
+}
+
+.hero .container {
+    margin-top: 25px !important;
+    position: relative;
+    z-index: 10;
+}
+
+.hero .container .row h1 {
+    letter-spacing: 2.5px;
+}
+
+.hero .container .row h6 {
+    font-size: 18px;
+}
+
+.hero .container .row h6 a {
+    font-size: 18px;
+    color: inherit;
+}
+
+.hero .container .row h6 a:hover {
+    color: red;
+}
+
+.hero {
+    background-position: 150px !important;
+    min-height: 55vh !important;
+}
+
+
+/* Konten-1 */
+
+.satu-contact {
+    padding: 50px 0;
+}
+
+.satu-contact .container .row h1 {
+    font-size: 42px;
+}
+
+.satu-contact .container .row span {
+    color: red;
+}
+
+
+/* Form Contact */
+
+.modal-body .webform a:hover {
+    background-color: red !important;
+    color: white !important;
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+#table-october {
+    display: none;
+}
+
+tribe-events-nav-previous a:target #table-october {
+    display: inline-block;
+}
+
+tribe-events-nav-previous a:target #table-november {
+    display: none;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+/* Jadwal */
+
+.jadwal {
+    margin: 50px 0;
+}
+
+
+/* Penutup Contact Page */
+
+
+/* Form-School Page */
+
+.btn {
+    background-color: black !important;
+    border: none;
+}
+
+.btn:hover {
+    background-color: red !important;
+}
+
+.satu-form-school {
+    margin: 50px 0;
+}
+
+
+/* Penutup Form-School Page */
+
+
+/* Gallery Page */
+
+.gallery {
+    margin: 50px 0;
+}
+
+.gallery .container .row .img-responsive {
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+}
+
+.gallery .container .row a:hover img {
+    transform: scale(1.2);
+}
+
+.gallery .container .row .gambar {
+    max-width: 350px !important;
+    max-height: 350px !important;
+    overflow: hidden !important;
+    margin: 0 15px 15px;
+    position: relative;
+}
+
+.gallery .container .row .gambar span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 100%;
+    color: #333;
+    opacity: 0;
+    transition: all 0.3s 0s ease;
+}
+
+.gallery .container .row .gambar a:hover span {
+    opacity: 1;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 200;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+    margin-top: 85px;
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+    animation: zoomDanfade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    line-height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    top: 40;
+    left: 50%;
+    text-shadow: none;
+    margin-left: -25px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 255, .8);
+    transition: 0.5s;
+}
+
+.overlay .close:target {
+    display: none;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fade-aja .5s .5s forwards;
+}
+
+.overlay .close:hover {
+    color: red;
+}
+
+.next,
+.prev {
+    width: 57px;
+    height: 93px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    margin-left: 50px;
+    opacity: 0;
+    z-index: 10;
+}
+
+.prev {
+    margin-left: -100px;
+}
+
+#accordion .card .card-header h5 .btn-link {
+    text-decoration: none;
+    background: blue !important;
+    color: white;
+}
+
+#accordion .card .card-header h5 .btn-link:hover {
+    color: white;
+    background: red !important;
+}
+
+
+/* news-letter page */
+
+.news-letter {
+    margin-bottom: 50px;
+}
+
+.news-letter .container .row img {
+    width: 100%;
+    height: 250px;
+}
+
+.news-letter .container .row h1 a {
+    font-size: 28px;
+    font-weight: 650;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.news-letter .container .row .info-panel {
+    margin-top: -20px;
+}
+
+.news-letter .container .row .info-panel a {
+    margin-right: 5px;
+}
+
+.news-letter .container .row p {
+    margin: 30px 0;
+}
+
+.news-letter .container .row span {
+    margin-right: 5px;
+    font-weight: normal;
+    padding: 5px;
+    color: white;
+}
+
+.news-letter .container .row span:hover {
+    color: white;
+    opacity: .8;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-social-media-news a {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.icon-social-media-news a:hover {
+    opacity: .8;
+}
+
+.news-konten {
+    margin-top: 50px;
+}
+
+.side-bar form {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 255, .8);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+.side-bar form .form-control {
+    background: transparent;
+}
+
+.side-bar .form-control:focus {
+    outline: none;
+}
+
+.side-bar .form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+.side-bar .categories i {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.profil-writer {
+    display: flex;
+    margin-right: 30px;
+}
+
+.profil-writer img {
+    height: 140px !important;
+    width: 140px !important;
+    border-radius: 50%;
+}
+
+.profil-writer-description p:first-of-type {
+    margin: -10px 0 10px !important;
+}
+
+.profil-writer-description p {
+    margin: 0 !important;
+}
+
+
+/*support mozilla*/
+
+.form-control::-moz-input-placeholder {
+    color: white;
+}
+
+
+/*support internet explorer*/
+
+.form-control::-ms-input-placeholder {
+    color: white;
+}
+
+@keyframes fade-aja {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomDanfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* News-Letter Description Page */
+
+.description-jumbotron {
+    background-image: url(../images/blue-snow.png);
+    height: 350px;
+    margin-top: 112px;
+}
+
+.description-news h1 {
+    text-transform: none;
+    font-weight: 600;
+}
+
+.description-news {
+    margin-bottom: 100px;
+}
+
+
+/* Upcoming-Events Page */
+
+.upcoming-event {
+    margin-bottom: 50px;
+}
+
+.upcoming-event .container .row h2 {
+    margin-top: 20px;
+}
+
+.upcoming-event #november-line,
+.upcoming-event #december-line {
+    border: 0;
+    border-top: 1px dashed #8c8c8c;
+    text-align: center;
+    margin: 70px 0;
+}
+
+.upcoming-event #november-line:after,
+.upcoming-event #december-line::after {
+    content: 'November 2020';
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    padding: 0 50px;
+    background: #fff;
+    color: rgb(75, 70, 70);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.upcoming-event hr {
+    margin: 50px 0;
+}
+
+.upcoming-event #december-line {
+    border: 0;
+    border-top: 1px dashed #8c8c8c;
+    text-align: center;
+    margin: 70px 0;
+}
+
+.upcoming-event #december-line::after {
+    content: 'December 2020';
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    padding: 0 50px;
+    background: #fff;
+    color: rgb(75, 70, 70);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.upcoming-event .container .row img {
+    width: 95%;
+    margin: 20px 0;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.upcoming-event .container .row {
+    margin-top: 50px;
+}
+
+.upcoming-event .container .row .bg-overlay {
+    opacity: 0;
+    height: 275px;
+    width: 95%;
+    transition: .3 ease;
+    position: absolute
+}
+
+.upcoming-event .container .row img:hover .bg-overlay {
+    opacity: 1;
+}
+
+.upcoming-event .container .row col-lg-5 {
+    position: relative;
+}
+
+.upcoming-event .container .row span {
+    box-sizing: border-box;
+    position: absolute;
+    left: 65px;
+    bottom: -5px;
+    background-color: red;
+    color: white !important;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: .3s all;
+}
+
+.upcoming-event .container .row .img-events:hover span {
+    bottom: 40px;
+}
+
+.upcoming-event .container .row span h3 {
+    margin-bottom: -5px;
+}
+
+.upcoming-event .container .row span h5 {
+    margin-top: -5px;
+}
+
+.icon-events {
+    display: flex;
+}
+
+
+/* Required Document Page */
+
+.required-doc {
+    margin: 100px 0;
+}
+
+.required-doc .description-required-doc {
+    margin-bottom: 50px;
+}
+
+.required-doc .img-responsive {
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.required-doc .img-responsive .img-wrap-1 {
+    border: 2px dashed blue;
+    border-radius: 10px;
+    height: 126px;
+    width: 84px;
+    display: grid;
+    align-items: center;
+    box-sizing: none;
+}
+
+.required-doc .img-responsive .img-wrap-2 {
+    border: 2px dashed blue;
+    border-radius: 10px;
+    height: 168px;
+    width: 126px;
+    display: grid;
+    align-items: center;
+}
+
+.required-doc .container .row .col-lg-3 {
+    order: 2;
+}
+
+
+/* Academic Calendar Page */
+
+.academic-calendar {
+    margin: 100px 0;
+}
+
+.academic-calendar .container .row table {
+    width: 100%;
+    height: 150px;
+    box-shadow: -1px 1px 10px grey;
+}
+
+.academic-calendar .container .row table thead td {
+    font-size: 12px;
+    width: 1fr;
+    padding: 15px;
+}
+
+.date td {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: whitesmoke;
+}
+
+
+/* .description-academic td{
+    padding: 20px;
+} */
+
+.disable-date {
+    opacity: .5;
+}
+
+.active-date {
+    background-color: blue !important;
+    color: white;
+}
+
+
+/* Event Detail Page */
+
+.event-detail {
+    margin: 50px 0;
+}
+
+.event-detail .container .row span {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.event-detail .container .row img {
+    height: 450px;
+    width: 100%;
+}
+
+.event-detail .container .row iframe {
+    margin-top: 30px;
+}
+
+
+/* Parent / PSG Page */
+
+.parent-psg {
+    margin: 50px 0;
+}
+
+.img-clip {
+    margin: 10px 0;
+}
+
+.img-clip-2 {
+    margin-bottom: 10px;
+}
+
+
+/* Alumni Page */
+
+.alumni {
+    margin: 50px 0;
+}
+
+.alumni .btn-alumni-pc {
+    display: flex;
+    cursor: pointer;
+}
+
+.alumni .btn-alumni-hp {
+    display: flex;
+    cursor: pointer;
+}
+
+
+/* Scholarship Requirement Page */
+
+.scholarship-requirement {
+    margin: 50px 0;
+}
+
+.scholarship-requirement .btn {
+    padding: 20px;
+}
+
+.scholarship-requirement h2 {
+    font-weight: 520;
+    letter-spacing: 0;
+}
+
+.scholarship-requirement .container .row {
+    margin: 80px 0;
+}
+
+.judul-scholarship-requirements {
+    text-align: center;
+}
+
+.judul-scholarship-requirements svg {
+    color: red;
+}
+
+
+/* .list-deskripsi-scholarship-requirements,.scholarship-requirement .deskripsi-1{
+    margin-left: 20px;
+} */
+
+
+/* Career Form */
+
+.career-form {
+    margin: 50px 0;
+}
+
+
+/* Video Page */
+
+.video {
+    margin: 50px 0;
+}
+
+.video .container .row .col-6 {
+    margin-top: 20px;
+}
+
+@media (max-width:768px) {
+    /* Scolarship Requirement Page */
+    .scholarship-requirement h2 {
+        font-size: 30px;
+    }
+    .alumni .btn-alumni-hp {
+        width: 150px;
+        height: 60px;
+        padding: 0;
+        margin-top: 15px;
+        color: white;
+        background: black;
+    }
+    .alumni .btn-alumni-hp:hover {
+        background-color: red;
+        cursor: pointer;
+    }
+    .alumni .btn-alumni-pc {
+        display: none !important;
+        opacity: 0 !important;
+    }
+}
+
+@media (min-width:920px) {
+    .news-letter .container {
+        width: 120%;
+    }
+    .news-letter .container .row img {
+        width: 100%;
+        height: 500px;
+    }
+    .news-letter .container .row h1 a {
+        font-size: 36px;
+    }
+    .required-doc .container .row .col-lg-3 {
+        order: 0;
+    }
+    /* Academic Calendar Page */
+    .academic-calendar .container .row table thead td {
+        width: 1fr;
+    }
+    .academic-calendar .container .row table thead td {
+        font-size: 16px;
+    }
+    .description-academic td {
+        width: 400px !important;
+        text-align: center;
+        height: 150px;
+    }
+    .date td {
+        padding: 10px;
+        font-size: 18px;
+    }
+    /* Event Detail Page */
+    .event-detail .container .row iframe {
+        margin-top: 0;
+    }
+    /* Parent / PSG Page */
+    .img-clip {
+        margin-top: 10px;
+    }
+    .img-clip-2 {
+        margin-bottom: 10px;
+    }
+    /* Alumni Page */
+    .alumni .btn-alumni-pc {
+        width: 150px;
+        height: 60px;
+        padding: 20px;
+        color: white;
+        margin-top: 15px;
+        background: black;
+    }
+    .alumni .btn-alumni-pc:hover {
+        background-color: red;
+    }
+    .alumni .btn-alumni-hp {
+        display: none !important;
+        opacity: 0 !important;
+    }
+}
